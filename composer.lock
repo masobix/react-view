@@ -1,0 +1,380 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "074bd05e49fd4db3313c61dc2322b378",
+    "packages": [
+        {
+            "name": "appsero/client",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Appsero/client.git",
+                "reference": "b61c3ab21df4d44f805ee9476f9d880f8370a36b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Appsero/client/zipball/b61c3ab21df4d44f805ee9476f9d880f8370a36b",
+                "reference": "b61c3ab21df4d44f805ee9476f9d880f8370a36b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+                "phpcompatibility/phpcompatibility-wp": "dev-master",
+                "phpunit/phpunit": "^8.5.31",
+                "squizlabs/php_codesniffer": "^3.7",
+                "tareq1988/wp-php-cs-fixer": "dev-master",
+                "wp-coding-standards/wpcs": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Appsero\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tareq Hasan",
+                    "email": "tareq@appsero.com"
+                }
+            ],
+            "description": "Appsero Client",
+            "keywords": [
+                "analytics",
+                "plugin",
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/Appsero/client/issues",
+                "source": "https://github.com/Appsero/client/tree/v2.0.2"
+            },
+            "time": "2024-01-30T08:15:01+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "matomo",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "tastyigniter",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-20T06:45:11+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/meta-box",
+            "version": "5.9.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/meta-box/",
+                "reference": "tags/5.9.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/meta-box.5.9.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/meta-box/"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "axepress/wp-graphql-stubs",
+            "version": "v1.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AxeWP/wp-graphql-stubs.git",
+                "reference": "e7ff2d60bba3353a0ad14fea39bf72e149643f00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AxeWP/wp-graphql-stubs/zipball/e7ff2d60bba3353a0ad14fea39bf72e149643f00",
+                "reference": "e7ff2d60bba3353a0ad14fea39bf72e149643f00",
+                "shasum": ""
+            },
+            "require": {
+                "php-stubs/wordpress-stubs": "^5.4 || ^6.0"
+            },
+            "require-dev": {
+                "php": ">=7.3",
+                "php-stubs/generator": "^0.8.0",
+                "phpstan/phpstan": "^1.8"
+            },
+            "suggest": {
+                "szepeviktor/phpstan-wordpress": "WordPress extensions for PHPStan"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "WPGraphQL function and class declaration stubs for static analysis.",
+            "homepage": "https://github.com/axewp/wp-graphql-stubs",
+            "keywords": [
+                "PHPStan",
+                "graphql",
+                "static analysis",
+                "wordpress",
+                "wp-graphql",
+                "wpgraphql"
+            ],
+            "support": {
+                "issues": "https://github.com/AxeWP/wp-graphql-stubs/issues",
+                "source": "https://github.com/AxeWP/wp-graphql-stubs/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/AxeWp",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-10T12:33:59+00:00"
+        },
+        {
+            "name": "baxtian/timber-stubs",
+            "version": "1.22.1",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/baxtian/timber-stubs.git",
+                "reference": "25d381f3e0126eecd9bb74da4f393e14605245c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/baxtian/timber-stubs/get/25d381f3e0126eecd9bb74da4f393e14605245c2.zip",
+                "reference": "25d381f3e0126eecd9bb74da4f393e14605245c2",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/composer": "^2.4",
+                "ext-gettext": "*",
+                "php-stubs/generator": "^0.8.1",
+                "wpackagist-plugin/timber-library": "^1.22"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Juan Sebastián Echeverry",
+                    "email": "baxtian.echeverry@gmail.com"
+                }
+            ],
+            "description": "Based on giacocorsiglia/wordpress-stubs and paulthewalton/acf-stubs. Timber function, class, and global variable declaration stubs for easier static analysis.",
+            "homepage": "https://bitbucket.org/baxtian/timber-stubs",
+            "keywords": [
+                "static analysis",
+                "timber",
+                "twig",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://bitbucket.org/baxtian/timber-stubs/src/25d381f3e0126eecd9bb74da4f393e14605245c2/?at=1.22.1"
+            },
+            "time": "2023-06-25T21:26:44+00:00"
+        },
+        {
+            "name": "php-stubs/wordpress-stubs",
+            "version": "v6.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-stubs/wordpress-stubs.git",
+                "reference": "e611a83292d02055a25f83291a98fadd0c21e092"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/e611a83292d02055a25f83291a98fadd0c21e092",
+                "reference": "e611a83292d02055a25f83291a98fadd0c21e092",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "nikic/php-parser": "^4.13",
+                "php": "^7.4 || ~8.0.0",
+                "php-stubs/generator": "^0.8.3",
+                "phpdocumentor/reflection-docblock": "5.3",
+                "phpstan/phpstan": "^1.10.49",
+                "phpunit/phpunit": "^9.5",
+                "szepeviktor/phpcs-psr-12-neutron-hybrid-ruleset": "^0.11"
+            },
+            "suggest": {
+                "paragonie/sodium_compat": "Pure PHP implementation of libsodium",
+                "symfony/polyfill-php80": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+                "szepeviktor/phpstan-wordpress": "WordPress extensions for PHPStan"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "WordPress function and class declaration stubs for static analysis.",
+            "homepage": "https://github.com/php-stubs/wordpress-stubs",
+            "keywords": [
+                "PHPStan",
+                "static analysis",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/php-stubs/wordpress-stubs/issues",
+                "source": "https://github.com/php-stubs/wordpress-stubs/tree/v6.5.3"
+            },
+            "time": "2024-05-08T02:12:31+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

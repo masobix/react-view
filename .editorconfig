@@ -1,0 +1,42 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+
+# Top-most EditorConfig file
+root = true
+
+# Set default charset
+[*]
+charset = utf-8
+
+# Indentation settings
+indent_style = tab
+indent_size = 4
+
+# End of line settings
+end_of_line = lf
+insert_final_newline = true
+
+# Trim trailing whitespaces
+trim_trailing_whitespace = true
+
+# Ensure a single newline at the end of files
+insert_final_newline = true
+
+# Settings for PHP files
+[*.php]
+indent_style = tab
+indent_size = 4
+
+# Settings for JavaScript files
+[*.js]
+indent_style = tab
+indent_size = 4
+
+# Settings for CSS files
+[*.css]
+indent_style = tab
+indent_size = 4
+
+# Ignore certain files
+[*.md]
+trim_trailing_whitespace = false

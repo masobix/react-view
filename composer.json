@@ -1,0 +1,43 @@
+{
+	"name": "lokuswp/fundrizer",
+	"type": "wordpress-plugin",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"FRZR\\": "src/"
+		},
+		"files": [
+			"vendor/meta-box/meta-box/meta-box.php"
+		]
+	},
+	"require-dev": {
+		"axepress/wp-graphql-stubs": "^1.21",
+		"baxtian/timber-stubs": "^1.22"
+	},
+	"scripts": {
+		"build": [
+			"./build.sh"
+		]
+	},
+	"require": {
+		"appsero/client": "^2.0",
+		"wpackagist-plugin/meta-box": "5.9.8"
+	},
+	"extra": {
+		"installer-paths": {
+			"vendor/meta-box/meta-box": [
+				"wpackagist-plugin/meta-box"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}
