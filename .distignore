@@ -23,3 +23,5 @@ composer.json
 composer.lock
 build.sh
 clean.sh
+build-release.sh
+wp-blocks/

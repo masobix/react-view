@@ -34,19 +34,25 @@ jobs:
       # This is just like cloning a repository except it only checks out the specific commit
       # the job is executed for. In our case here, the commit that the release is attached to.
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
        
       - name: Composer install 
         uses: php-actions/composer@v6
           
-      - name: Deploy to WP.org
-        uses: 10up/action-wordpress-plugin-deploy@stable
-        with:
-          generate-zip: true
-          dry-run: true
-        env:
-          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+      # - name: Deploy to WP.org
+      #   uses: 10up/action-wordpress-plugin-deploy@stable
+      #   with:
+      #     generate-zip: true
+      #     dry-run: true
+      #   env:
+      #     SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+      #     SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+
+      - name: Build Plugin
+        id: deploy 
+        run: |
+          build.sh
+          build-release.sh
 
 
       # After the deploy, we also want to create a zip and upload it to the release on Github. We don't want
