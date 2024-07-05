@@ -38,6 +38,7 @@ jobs:
               
       - name: Build Release
         run: build-release.sh
+        shell: bash
        
       - name: Composer install 
         uses: php-actions/composer@v6
