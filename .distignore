@@ -24,4 +24,5 @@ composer.lock
 build.sh
 clean.sh
 build-release.sh
+clean-release.sh
 wp-blocks/
