@@ -7,13 +7,14 @@
 # set -eo
 
 SLUG=${GITHUB_REPOSITORY#*/}
+VERSION="${GITHUB_REF#refs/tags/}"
+VERSION="${VERSION#v}"
 
 generate_zip(){ 
     echo "Generating zip file..."
     
-    zip -r "${GITHUB_WORKSPACE}/${SLUG}.zip" "${SLUG}/"
-    echo "zip-path=${GITHUB_WORKSPACE}/${SLUG}.zip" >> "${GITHUB_OUTPUT}"
-    echo "${GITHUB_WORKSPACE}/${SLUG}.zip"
+    zip -r "${GITHUB_WORKSPACE}/${SLUG}-${VERSION}.zip" "${SLUG}/"
+    echo "zip-path=${GITHUB_WORKSPACE}/${SLUG}-${VERSION}.zip" >> "${GITHUB_OUTPUT}"
     echo "✓ Zip file generated!"
 }
 
