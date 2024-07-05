@@ -10,10 +10,11 @@ generate_zip(){
     echo "Generating zip file..."
     SLUG="fundrizer"
     zip -r "${SLUG}.zip" dist/
+    echo "zip-path=${GITHUB_WORKSPACE}/${SLUG}.zip" >> "${GITHUB_OUTPUT}"
     echo "✓ Zip file generated!"
 }
 
-rm fundrizer.zip
+
 rsync -avr --exclude-from=".distignore" . dist --delete-after
 rsync -avr  --include="**build***" --include="*/" --exclude="*" wp-blocks/ dist/src/Blocks/
 

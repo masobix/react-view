@@ -34,24 +34,25 @@ jobs:
       # This is just like cloning a repository except it only checks out the specific commit
       # the job is executed for. In our case here, the commit that the release is attached to.
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
               
       - name: Composer install 
         uses: php-actions/composer@v6
 
       - name: Build Release
+        id: deployzip
         run: bash build-release.sh
           
-      - name: Deploy to WP.org
-        id: deploy
-        uses: 10up/action-wordpress-plugin-deploy@stable
-        with:
-          generate-zip: true
+      # - name: Deploy to WP.org
+      #   id: deploy
+      #   uses: 10up/action-wordpress-plugin-deploy@stable
+      #   with:
+      #     generate-zip: true
           
-        env:
-          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          BUILD_DIR: dist
+      #   env:
+      #     SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+      #     SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+      #     BUILD_DIR: dist
 
       # After the deploy, we also want to create a zip and upload it to the release on Github. We don't want
       # users to have to go to the repository to find our plugin :).
@@ -65,7 +66,7 @@ jobs:
           # Get the URL for uploading assets to the current release.
           upload_url: ${{ github.event.release.upload_url }}
           # Provide the path to the file generated in the previous step using the output.
-          asset_path: ${{ steps.deploy.outputs.zip-path }}
+          asset_path: ${{ steps.deployzip.outputs.zip-path }}
           # Provide what the file should be named when attached to the release (plugin-name.zip)
           asset_name: ${{ github.event.repository.name }}.zip
           # Provide the file type.
