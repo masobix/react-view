@@ -36,12 +36,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
               
-      - name: Build Release
-        run: bash build-release.sh
-       
-       
       - name: Composer install 
         uses: php-actions/composer@v6
+
+      - name: Build Release
+        run: bash build-release.sh
           
       - name: Deploy to WP.org
         id: deploy
