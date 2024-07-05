@@ -11,7 +11,7 @@ generate_zip(){
     SLUG=${GITHUB_REPOSITORY#*/}
     zip -r "${GITHUB_WORKSPACE}/${SLUG}.zip" dist/
     echo "zip-path=${GITHUB_WORKSPACE}/${SLUG}.zip" >> "${GITHUB_OUTPUT}"
-    pwd
+    echo "${GITHUB_WORKSPACE}/${SLUG}.zip"
     echo "✓ Zip file generated!"
 }
 
