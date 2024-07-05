@@ -26,3 +26,6 @@ clean.sh
 build-release.sh
 clean-release.sh
 wp-blocks/
+output.log
+DOCKER*
+docker*
