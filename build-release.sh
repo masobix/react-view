@@ -11,6 +11,7 @@ generate_zip(){
     SLUG="fundrizer"
     zip -r "${SLUG}.zip" dist/
     echo "zip-path=${GITHUB_WORKSPACE}/${SLUG}.zip" >> "${GITHUB_OUTPUT}"
+    pwd
     echo "✓ Zip file generated!"
 }
 
